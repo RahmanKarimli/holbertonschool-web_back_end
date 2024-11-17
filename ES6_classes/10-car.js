@@ -1,4 +1,3 @@
-import {HolbertonClass} from "./9-hoisting";
 /* eslint-disable */
 export default class Car {
   constructor(brand, motor, color) {
