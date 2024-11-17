@@ -31,20 +31,20 @@ class HolbertonCourse {
     if (typeof name !== "string") {
       throw new TypeError('Name must be a string');
     }
-    return this._name = name;
+    this._name = name;
   }
 
   set length(length) {
     if (typeof length !== 'string') {
-      throw new TypeError('Length must be a string');
+      throw new TypeError('Length must be a number');
     }
-    return this._length = length;
+    this._length = length;
   }
 
   set students(students) {
     if (!Array.isArray(students) || !students.every(student => typeof student === 'string')) {
-      throw new TypeError('Student must be a string');
+      throw new TypeError('Students must be an array of strings');
     }
-    return this._students = students;
+    this._students = students;
   }
 }
