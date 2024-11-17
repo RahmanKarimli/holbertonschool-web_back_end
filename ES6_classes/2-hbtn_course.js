@@ -1,10 +1,6 @@
 /* eslint-disable */
 export default class HolbertonCourse {
     constructor(name, length, students) {
-      this.name = 'string';
-      this.length = 0;
-      this.students = [];
-  
       this.name = name;
       this.length = length;
       this.students = students;
