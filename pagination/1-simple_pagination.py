@@ -5,9 +5,10 @@ Module defines simple helper function
 import csv
 import math
 from typing import List
+from typing import Tuple
 
 
-def index_range(page, page_size):
+def index_range(page: int, page_size: int) -> Tuple[int, int]:
     '''
     Function that returns a tuple of size two
     containing a start index and an end index
@@ -36,7 +37,7 @@ class Server:
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
         """Returns a list of rows corresponding to the requested page"""
-        assert isinstance(page, int) and isinstance(page_size, int), "Both arguments must be integers."
+        assert isinstance(page, int) and isinstance(page_size, int)
         assert page > 0 and page_size > 0
 
         indexes = index_range(page, page_size)
