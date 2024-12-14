@@ -11,3 +11,5 @@ def index_range(page, page_size):
     containing a start index and an end index
     '''
     return ((page * page_size) - page_size, page * page_size)
+
+print(index_range(2, 3))
