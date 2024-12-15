@@ -1,2 +1,2 @@
-// How many schools are there
-db.school.countDocuments()
+// How much schools are there
+db.school.count()
